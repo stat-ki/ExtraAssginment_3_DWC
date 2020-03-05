@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_many :books
   has_many :favorites
+  has_many :book_comment
   attachment :profile_image, destroy: false
 
   #バリデーションは該当するモデルに設定する。エラーにする条件を設定できる。
